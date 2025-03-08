@@ -1,0 +1,85 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/polaroid-generator/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-polaroid-generator {
+  padding: 2rem;
+}
+
+.polaroids {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroid {
+  width: 210px;
+  height: 160px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.polaroid img {
+  border: 1px solid #ddd;
+  opacity: 0;
+  padding: 5px;
+  transition: opacity 0.5s ease, filter 0.2s, transform 0.1s linear;
+  position: relative;
+  filter: grayscale(1);
+}
+.polaroid img.loaded {
+  opacity: 0.7;
+}
+.polaroid img.loaded:hover {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.2);
+  position: relative;
+  z-index: 999999;
+}
+.polaroid.edit img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* Loader animation styles */
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.137);
+  z-index: 999;
+}
+
+/* Optional: Add a spinning animation to the loader */
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation for the loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

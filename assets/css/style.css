@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-polaroid-generator {
+  background-color: #0c1c1d;
+  color: #fff;
+  padding: 5px;
+}
+
+.polaroids {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
