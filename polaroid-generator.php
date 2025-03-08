@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Polaroid Generator
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       A customizable WordPress Gutenberg block that generates a grid of polaroid-style images, sourced from Picsum Photos. Users can adjust the number of images displayed, with support for lazy loading and a responsive, flexible layout.
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
- * Author:            The WordPress Contributors
+ * Author:            Md.Anik
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       polaroid-generator
